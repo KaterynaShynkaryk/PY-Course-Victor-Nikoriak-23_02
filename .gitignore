@@ -1,25 +1,47 @@
-# Virtual environment
+# ===============================
+# Virtual environments
+# ===============================
 .venv/
 venv/
 env/
 
+# Environment variables
+.env
+.env.*
+
+# ===============================
 # PyCharm
+# ===============================
 .idea/
 
+# ===============================
 # Python cache
+# ===============================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 
+# ===============================
 # Jupyter
+# ===============================
 .ipynb_checkpoints/
 
-# Distribution / packaging
+# ===============================
+# Build / dist
+# ===============================
 dist/
 build/
 *.egg-info/
 
+# ===============================
 # OS
+# ===============================
 .DS_Store
 Thumbs.db
+
+# ===============================
+# Local tools (if not for public repo)
+# ===============================
+
+dashboard.ipynb
+
+start_dashboard.bat
