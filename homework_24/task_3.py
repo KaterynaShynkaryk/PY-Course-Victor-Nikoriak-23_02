@@ -21,6 +21,8 @@ class Stack:
             temp.append(top)
 
         else:
+            while temp:
+                self.push(temp.pop())
             raise ValueError('Елемент не знайдено')
 
         while temp:
