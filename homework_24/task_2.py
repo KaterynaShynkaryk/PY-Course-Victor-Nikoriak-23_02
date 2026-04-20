@@ -1,6 +1,6 @@
 def is_balanced(expr):
     stack = []
-    pairs = {'(': ')', '[': ']', '{': '}'}
+    pairs = {')': '(', ']': '[', '}': '{'}
 
     for char in expr:
         if char in '([{':
