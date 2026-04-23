@@ -16,7 +16,7 @@ class Queue:
             self.front = self.rear = new_node
             return
 
-        self.front.next = new_node
+        self.rear.next = new_node
         self.rear = new_node
 
     def dequeue(self):
