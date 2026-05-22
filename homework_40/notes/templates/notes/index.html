@@ -10,14 +10,15 @@
 <body>
     <main class="container">
         <h1>Мої нотатки</h1>
-        <p class="subtitle">Текстові дані з view</p>
+        <p class="subtitle">Дані з бази даних</p>
 
         <section class="notes-grid">
             {% for note in notes %}
                 <article class="note-card">
                     <h2>{{ note.title }}</h2>
-                    <p>{{ note.content }}</p>
-                    <time datetime="{{ note.created_at }}">Створено: {{ note.created_at }}</time>
+                    <p>{{ note.text }}</p>
+                    <p><strong>Нагадування:</strong> {{ note.reminder }}</p>
+                    <p><strong>Категорія:</strong> {{ note.category.title }}</p>
                 </article>
             {% empty %}
                 <p>Нотаток поки що немає.</p>
